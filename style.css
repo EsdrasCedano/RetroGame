@@ -1,0 +1,289 @@
+/* General */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-style:italic;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cuerpo */
+body {
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #E0E0E0; /* Texto claro */
+    display: flex; /* Pantalla Flexible */
+    flex-direction: column; 
+    min-height: 100vh; /* Minimo de Altura */
+}
+
+/* Encabezado */
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1E1E; /* Fondo oscuro para el header */
+    border-bottom: 1px solid #333;
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 1000; /* Para Sobreponer los Elementos HTML */
+    width: 100%; /* Hacemos que la cabecera ocupe el ancho completo de la página */   
+}
+
+/* Navegación */
+.container__nav ul {
+    display: flex;
+    gap: 10px; /* Espacio entre elementos HTML */
+}
+
+.container__nav ul li a {
+    color: #E0E0E0;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container__nav ul li a:hover {
+    background-color: #333; /* Efecto hover */
+    border-radius: 5px;
+}
+
+/* Barra de búsqueda */
+.container__search {
+    display: flex;
+    align-items: center;
+}
+
+.container__search input {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    color: #E0E0E0;
+}
+
+.container__search button {
+    background-color: #5A5A5A;
+    border: none;
+    padding: 10px;
+    color: #E0E0E0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container__search button:hover {
+    background-color: #444;
+}
+
+/* Sección principal de información */
+.main-info {
+    padding: 118px;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 895px;
+    margin: auto;
+    border-bottom: solid 3px white;
+}
+
+.contenedor2{
+    max-width: 895px;
+    margin: auto;
+}
+
+.h1 {
+    font-size: 2.0rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenedor p {
+    color: #BBBBBB;
+    font-size: 1.2rem;
+    line-height: 1.7; /*Espacio entre linea*/
+    text-align: justify;
+}
+
+.contenedor2 p {
+    color: #BBBBBB;
+    font-size: 1.2rem;
+    line-height: 1.7; /*Espacio entre linea*/
+    text-align: justify;
+}
+
+strong{
+    color: white;
+}
+
+/* Cards (ROMs y Emuladores) */
+.container{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 275px;
+    margin: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: solid 2px #f1faee;
+    color: white;
+    background-color: #1E1E1E;
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.185);
+    transition: all 450ms ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 190px;
+    background-color: white;
+}
+
+.card .contenido{
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom:12px;
+    overflow: hidden;
+}
+
+.card .contenido button {
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #1f3c68;
+    color: #f1faee;
+    border: solid 2.5px #f1faee;
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+    display: inline-block;
+}
+
+.card .contenido button:hover{
+    background: #29528b;
+}
+
+/* Contáctanos */
+.Contactos{
+    margin-top: 100px;
+}
+
+.forms{
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 15px;
+    padding: 70px;
+    margin: auto;
+}
+
+.form_container{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+.form_title{
+    color: black;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+.form_input{
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    border: solid 2px #bbb0b0;
+    border-radius: 10px;
+}
+
+.form_btn{
+    font-size: 1rem;
+    background-color: #1f3c68;
+    color:white;
+    border:none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Información-ROMS-Emuladores */
+.Información{
+    margin: 150px;
+    color: #f1faee;
+    background-color: #1E1E1E;
+    border: solid 2px #f1faee;
+    border-radius: 10px;
+}
+
+.Información h1{
+    margin: 50px;
+    text-align: center;
+}
+
+.Información p{
+    margin: 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #1E1E1E;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #bbbbbb;
+    font-size: 18px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MediaQuery Para Pantallas más Pequeñas */
+@media (max-width: 900px) {
+
+    /* Menu */
+    .container__header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container__header li {
+        margin: 0px;
+        text-align: center;
+        padding: 15px 0px;
+    }
+
+    .container__nav ul {
+        display: flex;
+        gap: 2px; /* Espacio entre elementos HTML */
+    }
+}
